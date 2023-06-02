@@ -1,0 +1,12 @@
+---
+name: arborist
+description: Prune orphaned branches from a forest of repos
+inputs:
+  github-token:
+    description: "Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}"
+    required: true
+runs:
+  using: docker
+  image: docker://ghcr.io/jhoblitt/arborist:main
+  args:
+    - --github-token ${{ inputs.github-token }}

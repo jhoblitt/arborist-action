@@ -1,6 +1,9 @@
 ---
 name: arborist-action
 description: Prune orphaned branches from a forest of repos
+branding:
+  icon: delete
+  color: green
 inputs:
   repo-token:
     description: "Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}"

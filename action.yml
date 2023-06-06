@@ -1,5 +1,5 @@
 ---
-name: arborist
+name: arborist-action
 description: Prune orphaned branches from a forest of repos
 inputs:
   repo-token:
